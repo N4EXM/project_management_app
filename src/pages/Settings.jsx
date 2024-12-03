@@ -2,7 +2,7 @@ import React from 'react'
 
 const Settings = () => {
   return (
-    <div>Settings</div>
+    <div className='flex flex-col items-start justify-start w-full min-h-screen bg-background'>Settings</div>
   )
 }
 
