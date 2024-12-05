@@ -15,7 +15,7 @@ export default {
         textColor: '#FFFFFF',
         darkText: '#A2A2A2',
         lightblue: '#38BDF8',
-        darkblue: '3B82F6',
+        darkblue: '#3B82F6',
         lightpurple: 'A855F7',
         darkpurple: '#8B5CF6',
         lightgreen: '#4ADE80',

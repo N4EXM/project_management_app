@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const Projects = () => {
   return (
-    <div className='flex flex-col items-start justify-start w-full min-h-screen bg-background'>Projects</div>
+    <div className='h-full lg:grid lg:grid-cols-12 lg:min-h-screen lg:grid-rows-12'>
+      <Navbar />
+
+    </div>
   )
 }
 
