@@ -25,7 +25,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='absolute bottom-0 left-0 w-full lg:w-80 lg:h-full h-max bg-secondaryBackground lg:flex lg:flex-col lg:items-start lg:col-span-2 lg:row-span-12 lg:justify-start lg:gap-24 lg:static lg:border-r-2 lg:border-r-zinc-900'>
+    <div className='absolute bottom-0 left-0 w-full lg:w-80 lg:h-full h-max bg-secondaryBackground lg:flex lg:flex-col lg:items-start lg:col-span-3 lg:row-span-12 lg:justify-start lg:gap-24 lg:static lg:border-r-2 lg:border-r-zinc-900'>
 
       <div className='flex-row items-center justify-start hidden w-full gap-1 p-5 h-max lg:flex'>
         <img className='w-12 h-12' src={logoIcon}/>

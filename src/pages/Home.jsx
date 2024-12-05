@@ -5,11 +5,12 @@ import CogIcon from '../assets/CogIcon.png'
 
 const Home = () => {
   return (
-    <div className='h-full lg:grid lg:grid-cols-12 lg:grid-rows-12 lg:h-screen'>
+    <div className='flex flex-col w-full h-full lg:h-screen lg:flex-row lg:gap-0'>
       <Navbar />
-      <div className='flex flex-col items-start justify-start gap-3 '>
 
-        <div className='flex flex-row items-center justify-between w-full p-4 lg:col-end-12 lg:row-start-1 lg:row-end-12 lg:col-start-3 '>
+      <div className='flex flex-col items-start justify-start w-full p-4 lg:grid lg:grid-cols-12 lg:grid-rows-12'>
+
+        <div className='flex flex-row items-center justify-between w-full gap-3 lg:col-end-13 lg:row-start-1 lg:col-start-1 '>
           <h1 className='text-base font-semibold opacity-60'>November 24 2024</h1>
           <div className='flex flex-row items-center justify-center gap-3'>
             <button>
@@ -21,8 +22,11 @@ const Home = () => {
           </div>
         </div>
 
-      </div>
+        <div className='w-full pt-4 lg:p-0 lg:row-start-2 lg:col-span-12'>
+          <p className='font-semibold'>Hello, Naeem 👋🏼</p>
+        </div>
 
+      </div>
 
     </div>
   )
