@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom' 
-  import Home from './pages/Home'
+import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Settings from './pages/Settings'
 import Calendar from './pages/Calendar'
@@ -19,6 +19,7 @@ function App() {
             <Route path="/Projects" element={<Projects />} />
             <Route path='/Settings' element={<Settings/>}></Route>
             <Route path='/Calendar' element={<Calendar/>}></Route>
+            <Route path='/Settings' elememt={<Settings/>}></Route>
           </Routes>
         </BrowserRouter>
       </div>
