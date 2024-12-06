@@ -2,19 +2,20 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import PlusIcon from '../assets/PlusIcon.png'
 import CogIcon from '../assets/CogIcon.png'
-import InfoCard from '../components/infoCard'
+import InfoCard from '../components/InfoCard'
 import clipBoardIcon from '../assets/ClipboardIcon.png'
 import checkIcon from '../assets/CheckIcon.png'
 import clockIcon from '../assets/ClockIcon.png'
+import CurrentProjectCard from '../components/CurrentProjectCard'
 
 const Home = () => {
   return (
     <div className='flex flex-col w-full h-full lg:h-screen lg:flex-row lg:gap-0'>
       <Navbar />
 
-      <div className='flex flex-col items-start justify-start w-full gap-6 p-4 lg:grid lg:gridRow16 lg:gridCol16 lg:gap-x-4 lg:gap-y-1 lg:p-6'>
+      <div className='flex flex-col items-start justify-start w-full gap-4 p-4 lg:grid lg:grid-rows-12 lg:grid-cols-12 lg:gap-x-4 lg:gap-y-1 lg:p-6'>
 
-        <div className='flex flex-row items-center justify-between w-full gap-3 lg:col-end-13 lg:row-start-1 lg:col-start-1 '>
+        <div className='flex flex-row items-center justify-between w-full lg:col-end-13 lg:row-start-1 lg:col-start-1 '>
           <h1 className='text-base font-semibold opacity-60'>November 24 2024</h1>
           <div className='flex flex-row items-center justify-center gap-3'>
             <button>
@@ -26,7 +27,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='w-full lg:p-0 lg:row-start-2 lg:col-span-12'>
+        <div className='w-full lg:hidden'>
           <p className='font-semibold'>Hello, Naeem 👋🏼</p>
         </div>
 
@@ -49,6 +50,12 @@ const Home = () => {
           number={'12'}
         />
 
+        <h1 className='text-xl font-bold'>Current projects: </h1>
+        <div>
+          <CurrentProjectCard/>
+          <CurrentProjectCard/>
+
+        </div>
       </div>
 
     </div>
