@@ -13,7 +13,7 @@ const Home = () => {
     <div className='flex flex-col w-full h-full lg:h-screen lg:flex-row lg:gap-0'>
       <Navbar />
 
-      <div className='flex flex-col items-start justify-start w-full gap-4 p-4 lg:grid lg:grid-rows-12 lg:grid-cols-12 lg:gap-x-4 lg:gap-y-1 lg:p-6'>
+      <div className='flex flex-col items-start justify-start w-full gap-6 p-4 lg:grid lg:grid-rows-12 lg:grid-cols-12 lg:gap-x-4 lg:gap-y-1 lg:p-6'>
 
         <div className='flex flex-row items-center justify-between w-full lg:col-end-13 lg:row-start-1 lg:col-start-1 '>
           <h1 className='text-base font-semibold opacity-60'>November 24 2024</h1>
@@ -27,9 +27,9 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='w-full lg:hidden'>
+        {/* <div className='w-full lg:hidden'>
           <p className='font-semibold'>Hello, Naeem 👋🏼</p>
-        </div>
+        </div> */}
 
         <InfoCard 
           icon={clipBoardIcon} 
@@ -50,10 +50,15 @@ const Home = () => {
           number={'12'}
         />
 
-        <h1 className='text-xl font-bold'>Current projects: </h1>
-        <div>
-          <CurrentProjectCard/>
-          <CurrentProjectCard/>
+        <div className='w-full h-full'>
+          <h1 className='mb-4 text-xl font-bold'>Current projects: </h1>
+          <CurrentProjectCard
+            ProjectName={'Task 1'}
+            StartTime={'10:00'}
+            EndTime={'12:00'}
+
+
+          />
 
         </div>
       </div>
