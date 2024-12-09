@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.circular-progressbar .CircularProgressbar-text {
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+  

@@ -2,7 +2,7 @@ import React from 'react'
 import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar'
 import ClockFadedIcon from '../assets/ClockFadedIcon.png'
 
-const CurrentProjectCard = ({ProjectName, PercentCompleted, DueDate, StartTime, EndTime}) => {
+const UpcomingProjectCard = ({ProjectName, PercentCompleted, DueDate, StartTime, EndTime}) => {
   return (
     <div className='flex flex-row items-center justify-between w-full h-full p-4 px-5 rounded-lg bg-tertiary'>
 
@@ -27,7 +27,7 @@ const CurrentProjectCard = ({ProjectName, PercentCompleted, DueDate, StartTime, 
             strokeWidth: 20, // Make the progress bar thicker
             textSize: "28px", // Adjust text size for better centering
             textColor: "white", // Text color
-            pathColor: "#38BDF8", // Tailwind's blue-500
+            pathColor: "#A855F7", // Tailwind's purple-500
             trailColor: "#374151", // Tailwind's gray-800
             textAlign: "center", // Ensure text is centered
           })}
@@ -39,4 +39,4 @@ const CurrentProjectCard = ({ProjectName, PercentCompleted, DueDate, StartTime, 
   )
 }
 
-export default CurrentProjectCard
+export default UpcomingProjectCard
