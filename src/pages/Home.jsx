@@ -8,6 +8,7 @@ import checkIcon from '../assets/CheckIcon.png'
 import clockIcon from '../assets/ClockIcon.png'
 import CurrentProjectCard from '../components/CurrentProjectCard'
 import UpcomingProjectCard from '../components/UpcomingProjectCard'
+import CalendarCard from '../components/CalendarCard'
   const Home = () => {
     return (
       <div className='relative flex flex-col w-full h-full lg:h-screen lg:flex-row lg:gap-0'>
@@ -21,9 +22,7 @@ import UpcomingProjectCard from '../components/UpcomingProjectCard'
             <button>
               <img className='w-8 h-8' src={PlusIcon} alt="Plus Icon" />
             </button>
-            <button>
-              <img className='w-7 h-7' src={CogIcon} alt="cog Icon" />
-            </button>
+            
           </div>
         </div>
 
@@ -50,7 +49,7 @@ import UpcomingProjectCard from '../components/UpcomingProjectCard'
           number={'12'}
         />
 
-        <div className='flex flex-col w-full col-span-4 row-span-5 row-start-4 gap-4 pt-3 h-96 lg:h-full'>
+        <div className='flex flex-col w-full col-span-4 row-span-6 row-start-4 gap-4 pt-3 h-72 lg:h-full'>
           <h1 className='text-xl font-bold '>Current projects: </h1>
           <div className='flex flex-col items-start justify-start w-full h-full gap-4 p-2 overflow-y-scroll rounded-lg bg-secondaryBackground'>
             <CurrentProjectCard
@@ -82,7 +81,7 @@ import UpcomingProjectCard from '../components/UpcomingProjectCard'
           
         </div>
 
-        <div className='flex flex-col w-full col-span-4 row-span-5 row-start-4 gap-4 pt-3 h-96 lg:h-full'>
+        <div className='flex flex-col w-full col-span-4 row-span-6 row-start-4 gap-4 pt-3 h-72 lg:h-full'>
           <h1 className='text-xl font-bold '>Upcoming projects: </h1>
           <div className='flex flex-col items-start justify-start w-full h-full gap-4 p-2 overflow-y-scroll rounded-lg bg-secondaryBackground'>
             <UpcomingProjectCard
@@ -112,6 +111,10 @@ import UpcomingProjectCard from '../components/UpcomingProjectCard'
           </div>
           
           
+        </div>
+        
+        <div className='w-full h-full col-start-9 col-end-13 row-start-4 pt-4 row-end-13'>
+          <CalendarCard/>
         </div>
 
       </div>
