@@ -113,7 +113,7 @@ import CalendarCard from '../components/CalendarCard'
           
         </div>
         
-        <div className='w-full h-full col-start-9 col-end-13 row-start-4 row-end-13'>
+        <div className='flex flex-col w-full h-full col-start-9 col-end-13 row-start-4 gap-3 pt-4 row-end-13'>
           <h1 className='text-xl font-bold'>Calendar: </h1>
           <CalendarCard/>
         </div>
