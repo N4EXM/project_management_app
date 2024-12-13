@@ -6,7 +6,16 @@ import Settings from './pages/Settings'
 import Calendar from './pages/Calendar'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const calendarDates = [
+    {
+      month:'January',
+      dates: [
+
+      ]
+    }
+
+  ]
 
   return (
     <>
