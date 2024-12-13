@@ -9,7 +9,7 @@ import clockIcon from '../assets/ClockIcon.png'
 import CurrentProjectCard from '../components/CurrentProjectCard'
 import UpcomingProjectCard from '../components/UpcomingProjectCard'
 import CalendarCard from '../components/CalendarCard'
-  const Home = () => {
+  const Home = ({calendarDates}) => {
     return (
       <div className='relative flex flex-col w-full h-full lg:h-screen lg:flex-row lg:gap-0'>
         <Navbar />
@@ -115,7 +115,7 @@ import CalendarCard from '../components/CalendarCard'
         
         <div className='flex flex-col w-full h-full col-start-9 col-end-13 row-start-4 gap-3 pt-4 row-end-13'>
           <h1 className='text-xl font-bold'>Calendar: </h1>
-          <CalendarCard/>
+          <CalendarCard calendarDates={calendarDates}/>
         </div>
 
       </div>

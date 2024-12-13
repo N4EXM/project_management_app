@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import ArrowIcon from '../assets/ArrowIcon.png'
 
-const CalendarCard = ({month, date, year}) => {
+const CalendarCard = ({calendarDates}) => {
 
   const [days, setDays] = useState(['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'])
 
